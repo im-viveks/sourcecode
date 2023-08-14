@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word counter</title>
+</head>
+<body>
+    
+    <div id="dowul">
+        <h1>Word Counter</h1>
+        <div class="inputdiv">
+           <textarea name="input" id="input" cols="45" rows="12" class="input"></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit" onclick="convert()">Calculate words</button>
+        </div>
+
+        <br>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+       function convert(){
+       const celvalue= document.getElementById("input").value
+       const fahvalue=celvalue.split('')
+       const result= document.getElementById("result")
+       result.innerHTML=fahvalue.length
+       }
+
+    </script>
+    
+    
+</body>
+</html>
