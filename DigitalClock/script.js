@@ -23,4 +23,3 @@ function doubleval(num){
 }
 setInterval(time,500);
 
-let datetime = new Date()
